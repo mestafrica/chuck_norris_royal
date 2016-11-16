@@ -73,7 +73,7 @@ header.navigation {
     z-index: 9999999;
 
     @include media ($horizontal-bar-mode) {
-      float: left;
+      float: right;
     }
   }
 
@@ -128,6 +128,11 @@ header.navigation {
 
       &:focus,
       &:hover {
+        color: $navigation-color-hover;
+      }
+    }
+    &.active {
+      a{
         color: $navigation-color-hover;
       }
     }
