@@ -1,9 +1,12 @@
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 @import "header";
 @import "footer";
-
+@import "dashboard";
+@import "payroll";
 
 .hero {
   $large-screen: 50em !default;
