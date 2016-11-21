@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   get 'admin/dashboard'
   get 'admin/accounts'
   get 'admin/payroll'
-
+  get 'admin/userpage'
+  get 'admin/reports'
   get 'app/index'
 
   get 'welcome/index'

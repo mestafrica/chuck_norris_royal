@@ -1,6 +1,12 @@
 <%= render 'header' %>
 <h1>Payroll Analysis (Month)</h1>
 <div id="margin1">
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        </div> <!-- /.modal-content -->
+    </div> <!-- /.modal-dialog -->
+</div>
 	<table class="container">
 		<thead>
 			<tr>
@@ -14,7 +20,7 @@
 		</thead>
 		<tbody>
 			<tr>
-				<td>Simeon</td>
+				<td><%= link_to 'Simeon', 'userpage', 'data-toggle' => 'modal', 'data-target' => '#myModal' %></td>
 				<td>800k</td>
 				<td>600</td>
 				<td>20k</td>
